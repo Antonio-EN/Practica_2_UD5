@@ -5,9 +5,12 @@ build:
   tools:
     python: "3.10"
 
+# Cambiamos sphinx por mkdocs
+mkdocs:
+  configuration: mkdocs.yml
+
+# Si no tienes un archivo requirements.txt, puedes simplificarlo así:
 python:
   install:
-    - requirements: docs/requirements.txt
-
-sphinx:
-  configuration: docs/source/conf.py
+    - method: pip
+      path: .
