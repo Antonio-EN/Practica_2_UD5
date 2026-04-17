@@ -1,0 +1,5 @@
+site_name: Mi Proyecto
+theme:
+  name: readthedocs
+nav:
+  - Inicio: index.md
